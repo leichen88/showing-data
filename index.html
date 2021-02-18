@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/showingdataicon.png">
+  <title>Showing Data</title>
+</head>
+
+<body>
+
+<!-- Navigation -->
+      <nav class="navbar bg-white navbar-light navbar-expand-md fixed-top justify-content-end">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/showingdatalogo.svg" alt="ShowingData Logo" title="ShowingData Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href=inner-d3.html>D3.js</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Python</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">R</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Power BI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Illustrator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Excel</a>
+                </li>
+              </ul>
+                  <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+                  </div>
+            </div>
+        </div>
+      </nav>
+<!-- End Navigation -->
+
+<!-- D3 Animation -->
+<section id="introduction" class="introduction section-bg">
+<div class="container">
+
+</div>
+</section>
+<!-- End D3 Animation -->
+
+<!-- Chart Category -->
+<section id="chart" class="chart">
+  <div class="container">
+    
+    <div class="section-title">
+      <h2>Charts for showing data</h2>
+    </div>
+
+    <div class="chart-menu">
+      <ul id="chart-filters" class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active show" href="#comparison" data-toggle="tab">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#correlation" data-toggle="tab">Correlation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#change-over-time" data-toggle="tab">Change Over Time</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#distribution" data-toggle="tab">Distribution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#flow" data-toggle="tab">Flow</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#geospatial" data-toggle="tab">Geospatial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#part-to-a-whole" data-toggle="tab">Part-to-a-whole</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ranking" data-toggle="tab">Ranking</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active show" id="comparison">
+        <div class="row chart-container">
+
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/bubble_comparison_chart.svg" class="img-fluid" alt=“”>
+              <div class="chart-info">
+                <button class="btn chart">Bubble Comparison Chart</button>
+              </div>
+            </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/bar_chart.svg" class="img-fluid" alt=“”>
+              <div class="chart-info">
+                <button class="btn chart">Bar Chart</button>
+              </div>
+            </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/bullet_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Bullet Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/circular_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Circular Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <a href="inner-column-chart.html">
+            <div class="chart-img comparison"><img src="images/column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Column Chart</button>
+            </div>
+            </div>
+            </a>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/dot_plot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Dot Plot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/grouped_bar_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Grouped Bar Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/grouped_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Grouped Column Chartt</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/isotype_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Isotype Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/lollipop_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Lollipop Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/parallel_coordiantes_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Parallel Coordiantes Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/population_pyramid.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Population Pyramid</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/radar_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Radar Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/slope_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Slope Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/stacked_bar_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Stacked Bar Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/stacked_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Stacked Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/waterfall.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Waterfall</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img comparison"><img src="images/word_cloud_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Word Cloud Chart</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="correlation">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/bubble_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Bubble Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/circular_packing.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Circular Packing</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/connected_scatterplot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Connected Scatterplot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/heatmap.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Heatmap</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/line_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Line Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/network.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Network</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/scatterplot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Scatterplot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/tree.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Tree</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img correlation"><img src="images/venn_diagram.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Venn Diagram</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="change-over-time">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/area_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Area Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/column_chart_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/connected_scatterplot_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Connected Scatterplot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/line_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Line Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/line_column_chart_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Line Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/slope.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Slope Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/stacked_area_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Stacked Area Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/streamgraph.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Streamgraph</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img change-over-time"><img src="images/timeline.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Timeline</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="distribution">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img distribution"><img src="images/boxplot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Boxplot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img distribution"><img src="images/dot_plot_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Dot Plot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img distribution"><img src="images/histogram.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Histogram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img distribution"><img src="images/population_pyramid_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Population Pyramid</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img distribution"><img src="images/violin_plot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Violin Plot</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="flow">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/arc_diagram.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Arc Diagram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/chord_diagram.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Chord Diagram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/sankey.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Sankey Diagram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/flow_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Flow Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/flow_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Flow Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/network_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Network</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img flow"><img src="images/waterfall_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Waterfall</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="geospatial">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/bubble_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Bubble Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/choropleth_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Choropleth Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/contour_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Contour Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/dot_density_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Dot Density Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/flow_map_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Flow Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/icon_map.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Icon Map</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img geospatial"><img src="images/map_with_pie_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Map With Pie Chart</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="part-to-a-whole">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/circular_packing_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Circular Packing</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/donut_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Donut Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/full_stacked_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Full Stacked Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/grid_plot.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Grid Plot</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/pie_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Pie Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/tree_diagram.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Tree Diagram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/venn_diagram_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Venn Diagram</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/voronoi.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Voronoi</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img part-to-a-whole"><img src="images/waterfall_3.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Waterfall</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="ranking">
+        <div class="row chart-container">
+          <div class="chart-description">
+          <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+            Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+            Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+            Est repellat minima eveniet eius et quis magni nihil. 
+            Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img ranking"><img src="images/lollipop.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Lollipop</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img ranking"><img src="images/ordered_bar_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Ordered Bar Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img ranking"><img src="images/ordered_column_chart.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Ordered Column Chart</button>
+            </div>
+          </div>
+          </div>
+          <div class="chart-item col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+            <div class="chart-img ranking"><img src="images/slope_2.svg" class="img-fluid" alt=“”>
+            <div class="chart-info">
+              <button class="btn chart">Slope Chart</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!-- End Chart Category -->
+
+<!-- Tools for showing data -->
+<!-- <section id="tools" class="tools">
+  <div class="container" data-aos="fade-up">
+    
+    <div class="section-title">
+      <h2>Tools for showing data</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+        nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4 class="title"><a href="">D3.js</a></h4>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4 class="title"><a href="">Python</a></h4>
+          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4 class="title"><a href="">R</a></h4>
+          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon"><i class="bx bx-world"></i></div>
+          <h4 class="title"><a href="">Power BI</a></h4>
+          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4 class="title"><a href="">Illustrator</a></h4>
+          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+          <div class="icon"><i class="bx bx-world"></i></div>
+          <h4 class="title"><a href="">Excel</a></h4>
+          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+        </div>
+      </div>
+ 
+  </div>
+
+</section> -->
+<!-- End tools for showing data -->
+
+<!-- Footer -->
+<footer id="footer">
+    
+    <div class="footer-top">
+      <nav class="footer-links text-center">
+        <a href="#">Home</a>
+        <a href="#">D3.js</a>
+        <a href="#">Python</a>
+        <a href="#">R</a>
+        <a href="#">Power BI</a>
+        <a href="#">Illustrator</a>
+        <a href="#">Excel</a>
+      </nav>
+    </div>
+
+    <div class="footer-middle">
+      <div class="social-links text-center">
+        <a href="#" class="github"><i class="fa fa-github"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  <div class="footer-botton ">
+    <div class="copyright text-center">
+      &copy;Copyright 2020 Showing Data
+    </div>
+  </div>
+
+
+
+</footer>
+<!-- End Footer -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+
+<!-- isotope filter -->
+<!-- <script>
+  $(document).ready(function(){
+  $('.chart-item').isotope({
+    itemSelector: '.chart-img',
+    layoutMode: 'fitRows'
+  });
+  $('.chart-menu ul li').click(function(){
+    $('.chart-menu ul li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    var selector = $(this).attr('data-filter');
+    $('.chart-item').isotope({
+      filter: selector
+    });
+    return false
+  });
+}); -->
+<!-- </script> -->
+<!-- End isotope filter -->
+
+<!-- <script>
+  $(function () {
+      $('#chart-filters li:eq(1) a').tab('show');
+  });
+</script> -->
+
+</body>
+</html>
