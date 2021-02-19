@@ -1,5 +1,13 @@
+// parse the data
+d3.csv("data/line-chart.csv", function(d) { 
+    return {
+        date: new Date(+d.Date, 0, 1),
+        value: + d.Value
+    };
+}).then(function(data){
+
 // initialize margin, width and height
-const margin = {top: 70, right: 20, bottom: 60, left: 40};
+const margin = {top: 80, right: 20, bottom: 70, left: 40};
 const width = 450 - margin.left - margin.right;
 const height = 350 - margin.top - margin.bottom;
 
@@ -12,14 +20,6 @@ const svg = d3.select("#d3-container-1")
         .attr("preserveAspectRatio", "xMinYMin")
     .append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`)
-
-// parse the data
-d3.csv("data/line-chart.csv", function(d) { 
-    return {
-        date: new Date(+d.Date, 0, 1),
-        value: + d.Value
-    };
-}).then(function(data){
 
 // X sacle and axis
 const xScale = d3.scaleTime()
