@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.chart.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/showingdataicon.png">
+  <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+  <script src="js/d3.js"></script>
+  <title>D3 Line Chart | Showing Data</title>
+</head>
+
+<body>
+<!-- Navigation -->
+      <nav class="navbar bg-white navbar-light navbar-expand-md fixed-top justify-content-end">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/showingdatalogo.svg" alt="ShowingData Logo" title="ShowingData Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href=inner-d3.html>D3.js</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Python</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">R</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Power BI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Illustrator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+                  <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+                  </div>
+            </div>
+        </div>
+      </nav>
+<!-- End Navigation -->
+
+<!-- Breadcrumbs -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <ol>
+        <li><a href="inner-d3.html">D3.js</a></li>
+        <li>Line Chart with D3.js</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<!-- Chart detail -->
+<section id="chart" class="chart">
+  <div class="container">
+    <div class="inner-section-title ">
+      <h2>Line Chart with D3.js</h2>
+      <p>
+        Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+        Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+        Est repellat minima eveniet eius et quis magni nihil. 
+        Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+        Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+        Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+        Est repellat minima eveniet eius et quis magni nihil. 
+        Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+      </p>
+    </div>
+
+    <div class="d3-column text-center">
+      <ul>
+        <li>Category: <a href="#">Change Over Time</a></il>
+        <li>More about: <a href="inner-line-chart.html">Line Chart</a></li>
+      </ul>
+    </div>
+
+    <div class="row text-center justify-content-center" id="layout">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div id="d3-container-4" class="container">
+        </div>
+        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. 
+          Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. 
+          Est repellat minima eveniet eius et quis magni nihil.</p>
+        <a class="btn" href="#">Get the code</a>
+      </div>
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <div id="d3-container-5" class="container">
+        </div>
+        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil.</p>
+        <a class="btn" href="#">Get the code</a>
+      </div>
+    </div>
+
+  </div>  
+</section>
+<!-- End Chart detail-->
+<section id="related-chart" class="related-chart">
+  <div class="container">
+    <h2>Related charts with D3.js</h2>
+    <div class="row inner-chart-container">
+      <div class="inner-chart-item">
+        <a href="#"><img src=images/area_chart.svg class="col" alt=""></a>
+      </div>
+      <div class="inner-chart-item">
+        <a href="#"><img src=images/column_chart_2.svg class="col" alt=""></a>
+      </div>
+      <div class="inner-chart-item">
+        <img src=images/connected_scatterplot_2.svg class="col" alt=""> 
+      </div>
+      <div class="inner-chart-item">
+        <a href="#"><img src=images/line_column_chart_2.svg class="col" alt=""></a>
+      </div>
+      <div class="inner-chart-item">
+        <a href="#"><img src=images/slope.svg class="col" alt=""></a>
+      </div>
+      <div class="inner-chart-item">
+        <img src=images/stacked_area_chart.svg class="col" alt=""> 
+      </div>
+      <div class="inner-chart-item">
+        <img src=images/streamgraph.svg class="col" alt=""> 
+      </div>
+      <div class="inner-chart-item">
+        <img src=images/timeline.svg class="col" alt=""> 
+      </div>  
+    </div>
+  </div>
+</section>
+
+
+<section id="other-tool" class="other-tool">
+  <div class="container">
+    <div class="chart-text">
+      <h2>Other tools available</h2>
+      <a class="btn" href="#">Python</a>
+      <a class="btn" href="#">R</a>
+      <a class="btn" href="#">Power BI</a>
+      <a class="btn" href="#">Illustrator</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="footer">
+    
+    <div class="footer-top">
+      <nav class="footer-links text-center">
+        <a href="#">Home</a>
+        <a href="#">D3.js</a>
+        <a href="#">Python</a>
+        <a href="#">R</a>
+        <a href="#">Power BI</a>
+        <a href="#">Illustrator</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+
+    <div class="footer-middle">
+      <div class="social-links text-center">
+        <a href="#" class="github"><i class="fa fa-github"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  <div class="footer-botton ">
+    <div class="copyright text-center">
+      &copy;Copyright 2020 Showing Data
+    </div>
+  </div>
+
+
+
+</footer>
+<!-- End Footer -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/column.chart.js"></script>
+<script type="text/javascript" src="js/column.chart.2.js"></script>
+
+</body>
+
+</html>
