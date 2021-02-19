@@ -57,8 +57,8 @@ const bisect = d3.bisector(function(d) { return d.date}).left;
 const focus = svg
     .append("g")
     .append("circle")
-        .style("fill", "steelblue")
-        .attr("stroke", "steelblue")
+        .style("fill", "#ffd17e")
+        .attr("stroke", "#ffd17e")
         .attr("r", 3)
         .style("opacity", 0)
 
