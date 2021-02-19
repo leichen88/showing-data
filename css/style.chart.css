@@ -43,9 +43,9 @@
   }
   
   text.title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    fill: #6f7eb8
+    fill: #2b2e31
   }
 
   text.value {
