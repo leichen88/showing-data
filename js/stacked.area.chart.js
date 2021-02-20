@@ -52,7 +52,7 @@ svg
 // set color palette for the bars
 const color = d3.scaleOrdinal()
   .domain(keys)
-  .range(["#338EC9", "#74879F"])
+  .range(["#fec452", "#ffdfa5"])
 
 // stack the data
 const stackedData = d3.stack()
