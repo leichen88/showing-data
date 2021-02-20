@@ -1,5 +1,5 @@
 // Parse the Data
-d3.csv("stacked_area_chart.csv", function(d) {
+d3.csv("data/stacked-area-chart.csv", function(d) {
   const perseTime = d3.timeParse("%Y")
   return {
         year: perseTime(d.year),
@@ -12,7 +12,7 @@ d3.csv("stacked_area_chart.csv", function(d) {
 
 console.log(data)
 
-const margin =  {top: 80, right: 20, bottom: 70, left: 40};
+const margin =  {top: 120, right: 20, bottom: 70, left: 40};
 const width = 600 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
@@ -22,7 +22,7 @@ const keys = data.columns.slice(1)
 console.log(keys)
 
 //create svg container
-const svg = d3.select("#de-container-3")
+const svg = d3.select("#d3-container-3")
   .append("svg")
     .attr("width","100%")
     .attr("height","100%")
@@ -122,9 +122,17 @@ svg
   .append('text')
       .attr('class', 'title')
       .attr('x', -23)
+      .attr('y', -(margin.top)/1.2)
+      .attr('text-anchor', 'start')
+      .text('IDPs protected/assisted by UNHCR vs Global number')
+svg
+  .append('text')
+      .attr('class', 'title')
+      .attr('x', -23)
       .attr('y', -(margin.top)/1.5)
       .attr('text-anchor', 'start')
-      .text('IDPs protected/assisted by UNHCR vs Global number of conflict-generated IDPs | 2007-2016')
+      .text('of conflict-generated IDPs | 2007-2016')
+
       
 svg
 .append('text')
