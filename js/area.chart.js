@@ -1,5 +1,5 @@
 // parse the data
-d3.csv("area_chart.csv", function(d) { 
+d3.csv("data/area-chart.csv", function(d) { 
     return {
         year: new Date(+d.Year, 0, 1),
         refugee: + d.Refugee
@@ -7,7 +7,7 @@ d3.csv("area_chart.csv", function(d) {
 }).then(function(data){
 
 // initialize margin, width and height
-const margin = {top: 80, right: 20, bottom: 50, left: 40};
+const margin = {top: 80, right: 20, bottom: 70, left: 40};
 const width = 600 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
@@ -54,7 +54,7 @@ svg
 svg
     .append("path")
     .datum(data)
-        .attr("fill", "#66AAD7")
+        .attr("fill", "#ffdfa5")
         .attr("d", d3.area()
             .x(function(d) { return xScale(d.year)})
             .y0(yScale(0))
@@ -65,7 +65,7 @@ svg
 svg
     .append("text")
         .attr("class", "title")
-        .attr("x", -35)
+        .attr("x", -30)
         .attr("y", -(margin.top/2))
         .attr("text-anchor", "start")
     .text("Trend of population of refugee | 1951-2019")
@@ -74,7 +74,7 @@ svg
 svg
     .append("text")
         .attr("class", "label")
-        .attr("x", -35)
+        .attr("x", -30)
         .attr("y", -(margin.top/5))
         .attr("text-anchor", "start")
     .text("Population (millions)")
@@ -83,7 +83,7 @@ svg
 svg
     .append("text")
         .attr("class", "source")
-        .attr("x", width + 10)
+        .attr("x", width)
         .attr("y", height + margin.bottom/2)
         .attr("text-anchor", "end")
     .text("Source: UNHCR, 2019")
