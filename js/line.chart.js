@@ -101,7 +101,7 @@ svg
     .append("path")
     .datum(data)
         .attr("fill", "none")
-        .attr("stroke", "#ffd17e")
+        .attr("stroke", "#6f7eb8")
         .attr("stroke-width", 2)
         .attr("d", d3.line()
             .x(function(d) { return xScale(d.date)})
