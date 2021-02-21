@@ -94,7 +94,7 @@ const barGroup = svg.selectAll("rect")
 barGroup
   .append("rect")
     .attr("class", "bar")
-    .style("fill", "#ffd17e")
+    .style("fill", "#6f7eb8")
     .attr("x", function(d) { return xScale(d.year); })
     .attr("y", function(d) { return yScale1(d.globDisp); })
     .attr("width", xScale.bandwidth())
@@ -123,7 +123,7 @@ svg
     .attr("x", -23)
     .attr("y", -(margin.top/4))
     .attr("text-anchor", "start")
-    .style("fill", "#fdb71a")
+    .style("fill", "#6f7eb8")
   .text("Displaced population (millions)")
 
 
