@@ -54,7 +54,7 @@ svg
 svg
     .append("path")
     .datum(data)
-        .attr("fill", "#ffdfa5")
+        .attr("fill", "#6f7eb8")
         .attr("d", d3.area()
             .x(function(d) { return xScale(d.year)})
             .y0(yScale(0))
