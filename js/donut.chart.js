@@ -45,7 +45,7 @@ const labelArcs = d3.arc()
 // set the color
 const color = d3.scaleOrdinal()
     .domain(pieKey)
-    .range(["#6a696b", "#c0bebf", "#929092"])
+    .range(["#6f7eb8", "#c6cae4", "#98a0cc"])
 
 // create pie chart
 svg
