@@ -52,7 +52,7 @@ svg
 // set color palette for different layers
 const color = d3.scaleOrdinal()
     .domain(keys)
-    .range(["#c5e7e4","#ee99ff", "#f6ab93", "#b8f1b8", "#929092", "#98a0cc"])
+    .range(["#ffd17e","#d351ff", "#aadcd9", "#f1866b", "#6f7eb8", "#92ec89"])
 
 // stack the data
 const stackedData = d3.stack()
@@ -139,7 +139,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#929092");
+        .style("fill", "#6f7eb8");
 svg
     .append("text")
         .attr("class", "legend")
@@ -155,7 +155,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#c5e7e4")
+        .style("fill", "#ffd17e")
 svg
     .append("text")
         .attr("class", "legend")
@@ -171,7 +171,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#f6ab93")  
+        .style("fill", "#aadcd9")  
 svg
     .append("text")
         .attr("class", "legend")
@@ -187,7 +187,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#b8f1b8")
+        .style("fill", "#f1866b")
 svg
     .append("text")
         .attr("class", "legend")
@@ -203,7 +203,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#ee99ff")
+        .style("fill", "#d351ff")
 svg
         .append("text")
             .attr("class", "legend")
@@ -219,7 +219,7 @@ svg
         .attr("y", -30)
         .attr("width", 20)
         .attr("height", 15)
-        .style("fill", "#98a0cc")
+        .style("fill", "#92ec89")
         .classed("rect6", true)
 svg
     .append("text")
