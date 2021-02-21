@@ -22,7 +22,7 @@ const path = d3.geoPath()
 // set color scale
 const color = d3.scaleThreshold()
         .domain([1000,10000,100000,1000000,2000000])
-        .range(["#d8f8d9", "#b8f1b8", "#92ec89", "#77e868", "#70d660"])
+        .range(["#c6cae4", "#98a0cc", "#6f7eb8", "#4663a8", "#084c9a"])
         .unknown("#ccc")
 
 // set legend
