@@ -122,7 +122,7 @@ a:hover, a:focus {
 
 /* Sections General */
 section {
-    padding: 60px 0;
+    padding-top: 60px;
     overflow: hidden;
   }
   
