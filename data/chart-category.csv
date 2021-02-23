@@ -1,0 +1,69 @@
+category,name,size
+Comparison,Column Chart,10
+Comparison,Bar Chart,11
+Comparison,Bubble Comparison Chart,12
+Comparison,Bullet Chart,13
+Comparison,Circular Column Chart,14
+Comparison,Dot Plot,15
+Comparison,Grouped Bar Chart,16
+Comparison,Grouped Column Chart,17
+Comparison,Isotype Chart,18
+Comparison,Lollipop Chart,19
+Comparison,Parallel Coordinates Chart,20
+Comparison,Population Pyramid,21
+Comparison,Radar Chart,22
+Comparison,Slope Chart,23
+Comparison,Stacked Bar Chart,24
+Comparison,Stacked Column Chart,25
+Comparison,Waterfall,26
+Comparison,Word Cloud Chart,27
+Correlation,Bubble Chart,28
+Correlation,Circular Packing,29
+Correlation,Connected Scatterplot,30
+Correlation,Heatmap,31
+Correlation,Line Column Chart,32
+Correlation,Network,33
+Correlation,Scatterplot,34
+Correlation,Tree,35
+Correlation,Venn Diagram,36
+Change-Over-Time,Area Chart,37
+Change-Over-Time,Column Chart,38
+Change-Over-Time,Connected Scatterplot,39
+Change-Over-Time,Line Chart,40
+Change-Over-Time,Line Column Chart,41
+Change-Over-Time,Slope Chart,42
+Change-Over-Time,Stacked Area Chart,43
+Change-Over-Time,Streamgraph,44
+Change-Over-Time,Timeline,45
+Distribution,Boxplot,46
+Distribution,Dot Plot,47
+Distribution,Histogram,48
+Distribution,Population Pyramid,49
+Distribution,Violin Plot,50
+Flow,Arc Diagram,51
+Flow,Chord Diagram,52
+Flow,Sankey Diagram,53
+Flow,Flow Chart,54
+Flow,Flow Map,55
+Flow,Network,56
+Flow,Waterfall,57
+Geospatial,Bubble Map,58
+Geospatial,Choropleth Map,59
+Geospatial,Contour Map,60
+Geospatial,Dot Density Map,61
+Geospatial,Flow Map,62
+Geospatial,Icon Map,63
+Geospatial,Map with Pie Chart,64
+Part-to-a-whole,Pie Chart,65
+Part-to-a-whole,Donut Chart,66
+Part-to-a-whole,Full Stacked Column Chart,67
+Part-to-a-whole,Circular Packing,68
+Part-to-a-whole,Grid Plot,69
+Part-to-a-whole,Venn Diagram,70
+Part-to-a-whole,Voronoi,71
+Part-to-a-whole,Waterfall,72
+Part-to-a-whole,Tree Diagram,73
+Ranking,Lollipop Chart,74
+Ranking,Odered Bar Chart,75
+Ranking,Odered Column Chart,76
+Ranking,Slope Chart,77
