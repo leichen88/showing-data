@@ -42,13 +42,14 @@ const mouseover = function(d) {
   tooltip
       .style("opacity", 1)
   d3.select(this)
-      .style("stroke", "#fdb71a")
-      .style("opacity", .2)
+      .style("stroke", "#e82c2a")
+      .style("stroke-width", 3)
+      .style("opacity", .5)
 }
 
 const mousemove = function(d) {
   tooltip
-  .html("<div>" + d.name + "</div><div><span style='color:red'> "+ d.category)
+  .html("<div>" + d.name + "</div><div><span style='color:#98a0cc'> "+ d.category)
   .style("top", d3.event.pageY - 10 + "px")
   .style("left", d3.event.pageX + 10 + "px");
 }
