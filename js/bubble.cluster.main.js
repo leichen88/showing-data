@@ -66,7 +66,7 @@ const simulation = d3.forceSimulation()
                    
                    .force("forceX", d3.forceX().strength(.1).x(width / 2))
                    .force("forceY", d3.forceY().strength(.1).y(height / 2))
-                   .force("center", d3.forceCenter().x(width / 1.8).y(height / 2))
+                   .force("center", d3.forceCenter().x(width / 2).y(height / 2))
                    .force("charge", d3.forceManyBody().strength(1))
                    .force("collide",d3.forceCollide(20).strength(1))
                    .on("tick", function(d){
