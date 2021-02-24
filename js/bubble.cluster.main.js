@@ -44,12 +44,12 @@ const mouseover = function(d) {
       .style("opacity", .2)
 }
 
-// const mousemove = function(d) {
-//   tooltip
-//   .html("<div>" + d.name + "</div><div><span style='color:red'> "+ d.category)
-//   .style("top", d3.event.pageY - 10 + "px")
-//   .style("left", d3.event.pageX + 10 + "px");
-// }
+const mousemove = function(d) {
+  tooltip
+  .html("<div>" + d.name + "</div><div><span style='color:red'> "+ d.category)
+  .style("top", d3.event.pageY - 10 + "px")
+  .style("left", d3.event.pageX + 10 + "px");
+}
 
 const mouseleave = function(d) {
   tooltip
@@ -91,7 +91,7 @@ const node = svg
              .on("drag", dragged)
              .on("end", dragended))
             .on("mouseover", mouseover)
-            // .on("mousemove", mousemove)
+            .on("mousemove", mousemove)
             .on("mouseleave", mouseleave);
             
             
