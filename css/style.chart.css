@@ -67,13 +67,12 @@
     position: absolute;
     opacity: 0;
     background: white;
-    color: black;
+    color: #2b2e31;
     border-radius: 5px;
     border-color: #666666;
     padding: 5px;
     text-align: left;
     box-shadow: 0px 0px 5px 0px #999999;
-
   }
 
   .counties {

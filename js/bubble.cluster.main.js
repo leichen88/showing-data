@@ -21,11 +21,13 @@ const width = 960,
 
 const svg = d3.select("#container")
             .append("svg")
-              .attr("width", width)
-              .attr("height", height)
+              .attr("width", "100%")
+              .attr("height", "100%")
+              .attr("viewBox","0 0  960 450")
+              .attr("preserveAspectRatio","xMinYMin");
 
 
-const color = d3.scaleOrdinal(["#c6cae4", "#e1f2f0", "#f3e5da","#fbd3c3", "#f9c7ff", "#d8f8d9", "#c0bebf", "#c0b6cd"]); 
+const color = d3.scaleOrdinal(["#c0b6cd", "#c0bebf", "#d8f8d9", "#f9c7ff", "#fbd3c3", "#ffedcf","#e1f2f0","#c6cae4"]); 
 const radius = Math.random() * 10;
 
 
