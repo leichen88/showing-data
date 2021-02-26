@@ -471,6 +471,19 @@ Inter-D3.JS-page
   color:#876fb3
 }
 
+.chart-d3-inner h4 {
+  padding-bottom: 10px;
+}
+.chart-d3-inner h4::after {
+  content:' ';
+  display:block;
+  border: 0.2px solid;
+}
+
+.chart-d3-inner .d3-category {
+  margin-bottom: 20px;
+}
+
 /* Chart category */
 .chart-d3-inner{ 
   overflow: hidden;
