@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/showingdataicon.png">
+  <title>Circular Column Chart | Showing Data</title>
+</head>
+
+<body>
+
+<!-- Navigation -->
+  <nav class="navbar bg-white navbar-light navbar-expand-md fixed-top justify-content-end">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/showingdatalogo.svg" alt="ShowingData Logo" title="ShowingData Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="inner-d3.html">D3.js</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">R</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Power BI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Illustrator</a>
+            </li>
+          </ul>
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Search...">
+            <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+    </div>
+  </nav>
+<!-- End Navigation -->
+
+<!-- Breadcrumbs -->
+<section id="breadcrumbs" class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Circular Column Chart</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<!-- Content -->
+<section id="chart-detail" class="chart-detail">
+  <div class="container">
+      <div class="chart-img text-center">
+        <img src="images/bullet_chart.svg" class="col" alt="">
+        <h4>Circular Column Chart</h4>
+      </div>
+      <div class="chart-text">
+        <h2>Description</h2>
+        <p>
+          Circular column chart is another type of bar/column chart. It displays bars on a polar axis instead of a line axis. 
+          The bars start from the center and extend outwards. Its layout is pretty, but it’s difficult to compare the value each other.
+        </p>
+      </div>
+      <div class="chart-text">
+        <h2>When to Use</h2>
+        <p>
+          Circular column chart can be used when there are a large number of bars to show, but has very limited space for the chart. 
+          And when tired of using the normal bar/column chart, and want something pretty for “eye catching”. 
+        </p>
+      </div>
+      <div class="chart-text">
+        <h2>Dos</h2>
+        <ul>
+          <li>Always start at zero baseline</li>
+          <li>Use consistent colors throughout the chart</li>
+        </ul>
+      </div>
+      <div class="chart-text">
+        <h2>Don'ts</h2>
+        <ul>
+          <li>Don’t use shadow effects</li>
+          <li>Don’t use 3D effects</li>
+        </ul>
+      </div>
+      <div class="chart-text">
+        <h2>Tools available</h2>
+        <a class="btn" href="d3-column-chart.html">D3.js</a>
+        <a class="btn" href="#">Python</a>
+        <a class="btn" href="#">R</a>
+        <a class="btn" href="#">Power BI</a>
+        <a class="btn" href="#">Illustrator</a>
+      </div>
+      <div class="chart-text">
+        <h2>Other chart types for comparison</h2>
+        <div class="row inner-chart-container">
+          <div class="inner-chart-item">
+            <img src=images/bar_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/stacked_bar_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/grouped_bar_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/stacked_column_chart.svg class="col" alt="">
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/column_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/bubble_comparison_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/bullet_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/dot_plot.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/isotype_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/lollipop_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/parallel_coordiantes_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/population_pyramid.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/radar_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/slope_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/waterfall.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/grouped_column_chart.svg class="col" alt=""> 
+          </div>
+          <div class="inner-chart-item">
+            <img src=images/word_cloud_chart.svg class="col" alt=""> 
+          </div>
+        </div>
+      </div>
+      <!-- <div class="chart-text">
+        <h2>Reference</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+          quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+          vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet
+        </p>
+      </div> -->
+  </div>
+
+
+</section>
+<!-- End Content -->
+
+
+
+
+<!-- Footer -->
+<footer id="footer">
+    
+    <div class="footer-top">
+      <nav class="footer-links text-center">
+        <a href="#">Home</a>
+        <a href="#">D3.js</a>
+        <a href="#">Python</a>
+        <a href="#">R</a>
+        <a href="#">Power BI</a>
+        <a href="#">Illustrator</a>
+      </nav>
+    </div>
+
+    <div class="footer-middle">
+      <div class="social-links text-center">
+        <a href="#" class="github"><i class="fa fa-github"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  <div class="footer-botton ">
+    <div class="copyright text-center">
+      &copy;Copyright 2020 Showing Data
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+
+</body>
+
+</html>
